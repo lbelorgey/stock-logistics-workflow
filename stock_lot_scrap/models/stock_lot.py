@@ -61,6 +61,7 @@ class StockLot(models.Model):
             "location_id": quant.location_id.id,
             "scrap_location_id": scrap_location_id,
             "lot_id": self.id,
+            'owner_id': quant.owner_id.id,
             "package_id": quant.package_id.id,
         }
 
